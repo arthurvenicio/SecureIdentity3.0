@@ -1,8 +1,11 @@
-﻿namespace SecureIdentity.Password.Exceptions;
+﻿using System;
 
-public class InvalidPasswordException : Exception
+namespace SecureIdentity.Password.Exceptions
 {
-    public InvalidPasswordException(string message = "Invalid password") : base(message)
+    public class InvalidPasswordException : Exception
     {
+        public InvalidPasswordException(string message = "Invalid password") : base(message)
+        {
+        }
     }
 }
